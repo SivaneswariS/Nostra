@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Tailwind CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!--Font link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+</head>
+<body>
+
+        <!--Responsive Navbar-->
+    <nav class="p-5 flex items-center justify-between sticky top-0 bg-white z-10 ">
+        <h1 class="text-2xl font-bold lg:text-3xl" >Nostra</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 lg:hidden">
+         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <ul class="flex gap-8 hidden lg:flex justify-around ">
+            <li>
+                <a class="hover:underline"  href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline"   href="#">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline"   href="#">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline"   href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline"   href="contact.html">Contact Us</a>
+            </li>
+        </ul>   
+
+    </nav>
+
+    <!--Contact Details-->
+    <section class="bg-black mt-4 p-10 ml-20 mr-20 rounded-xl lg:ml-60 lg:mr-60" >
+        <form>
+            <div>
+            <h1 class="font-bold text-2xl text-white">Contact Us</h1>
+            <p class="mt-4 text-white">Name:</p>
+            <input type="text" placeholder="Enter your Name" style="width: 80%;" class="rounded mt-2 p-2 " required>
+        </div>
+        <div>
+            <p class="mt-4 text-white">Email:</p>
+            <input type="text" placeholder="Enter your Email" style="width: 80%;" class="rounded mt-2 p-2 " required>
+        </div>
+        <div>
+                <p class="mt-4 text-white">Message:</p>  
+                <textarea placeholder="Enter your Message" style="width: 80%;" class="p-2 mt-2" required></textarea >                                                                                                          
+        </div>
+        <button class="bg-blue-700 text-white rounded p-3 mt-3 cursor-pointer">Submit</button>
+        </form>
+        
+       
+
+
+    </section>
+
+
+
+  
+
+
+        <!--News Letter-->
+    <section class="p-5 text-center">
+        <h1 class="text-2xl font-bold " >Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class="border border-black p-2 m-3 " style="width: 80%;">
+        <br>
+        <button class="border border-white rounded-xl text-xs bg-black text-white p-3 mt-1">Subscribe
+                        <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+    </section>
+
+    <!--Footer-->
+    <section class="bg-black text-white p-8 lg:text-2xl">
+        <h1 class="font-bold text-2xl lg:text-4xl ">Nostra</h1>
+        <p class="mt-2">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="mt-2 ">
+            <i class="fa-brands fa-instagram" ></i>
+            <i class="fa-brands fa-twitter" ></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <p class="mt-2">@ 2023 Nostra.com</p>
+
+    </section>
+
+
+
+
+</body>
+</html>

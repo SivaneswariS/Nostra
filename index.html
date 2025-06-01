@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Tailwind CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!--Font link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+</head>
+<body>
+    <!--offer-->
+    <div class="bg-black text-white p-1 flex items-center justify-center gap-10 lg:text-2xl " class="popup hidden">
+        <p class="" >Sign Up and GET 20% OFF for your first Order </p>
+        <p style="cursor: pointer;" id="close">X</p>
+    </div>
+
+
+    <!--Responsive Navbar-->
+    <nav class="p-5 flex items-center justify-between sticky top-0 bg-white z-10">
+        <h1 class="text-2xl font-bold" >Nostra</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 lg:hidden">
+         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <ul class="flex gap-8 hidden lg:flex ">
+            <li>
+                <a class="hover:underline"  href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline"   href="#">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline"   href="#">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline"   href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline"   href="contact.html">Contact Us</a>
+            </li>
+        </ul>   
+
+    </nav>
+
+    <!--Header Section-->
+
+    <section class=" p-3 w-screen relative overflow-hidden">
+
+  <!-- Fullscreen Background Image -->
+        <div id="slider" class="flex  transition-transform duration-500 ease-in-out">
+            <img src="./images/p1.jpg" alt="New Costume" class="w-full rounded object-cover ">
+            <img src="./images/p1.jpg" alt="New Costume" class="w-full rounded object-cover ">
+            <img src="./images/p1.jpg" alt="New Costume" class="w-full rounded object-cover ">
+            
+        </div>
+        
+       
+
+  <!-- Centered Text Overlay -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10">
+            
+            <h1 class="text-4xl  lg:text-6xl font-bold mb-4">Level up your style with our</h1>
+            <p class="text-base sm:text-xl mb-4">Summer Collections</p>
+            <button class="bg-white text-black p-2 rounded hover:bg-gray-200 transition">Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+         <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 text-4xl pl-10">
+             <i class="fa-solid fa-angle-left" style="color: white;"></i>
+        </button>
+        <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 text-4xl pr-10">
+            <i class="fa-solid fa-angle-right" style="color: white;"></i>
+        </button>
+    </section>
+
+ <!--Brands-->
+
+    <section class="p-5">
+        <h1 class="text-2xl font-bold ">Brands</h1>
+        <div class="pt-3 flex items-center justify-between">
+            <div class="flex flex-col items-center ">
+                <img src="./images/behance.png" class="w-10 lg:w-20"><label class="lg:text-xl">Puma</label>
+
+            </div>
+             <div class="flex flex-col items-center ">
+                <img src="./images/adidas.png" class="w-10 lg:w-20 "><label class="lg:text-xl">Adidas</label>
+
+            </div>
+            <div class="flex flex-col items-center ">
+                <img src="./images/simple.png" class="w-10 lg:w-20 "><label class="lg:text-xl">Simple</label>
+
+            </div>
+            <div class="flex flex-col items-center ">
+                <img src="./images/leaves.png" class="w-10 lg:w-20"><label class="lg:text-xl">Leaves</label>
+
+            </div>
+            <div class="flex flex-col items-center ">
+                <img src="./images/behance.png" class="w-10 lg:w-20"><label class="lg:text-xl">Behance</label>
+
+            </div>
+            <div class="flex flex-col items-center ">
+                <img src="./images/twitch.png" class="w-10 lg:w-20"><label class="lg:text-xl">Adidas</label>
+
+            </div>
+            <div class="flex flex-col items-center ">
+                <img src="./images/leaves.png" class="w-10 lg:w-20"><label class="lg:text-xl">Leaves</label>
+
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!--Customer Experiences-->
+    <section class="p-5">
+        <div class="flex items-center justify-between lg:text-2xl">
+            <h1 class="font-bold text-xl lg:text-4xl flex-wrap">
+                <span class="block">We Provide Best</span>
+      <span class="block">Customer Experiences</span>
+            </h1>
+            <p>|| We ensure that our customer have the best shopping experience</p>
+        </div>
+   
+
+          <!--Container-->
+        <div  class="flex gap-2 mt-3 text-xs lg:text-xl">
+            <div class="border border-white rounded p-2 bg-gray-200 ">
+                <img src="./images/check-mark.png"  class="w-10">
+                <p class="font-bold mt-2">Original Products</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+
+            <div class="border border-white rounded p-2 bg-gray-200 ">
+                <img src="./images/smiley.png" class="w-10">
+                <p class="font-bold mt-2">Satisfaction Guarantee</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+
+            
+            <div class="border border-white rounded p-2 bg-gray-200 ">
+                <img src="./images/board.png" class="w-10">
+                <p class="font-bold mt-2">New Arrival Everyday</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+
+            
+            <div class="border border-white rounded p-2 bg-gray-200 ">
+                <img src="./images/delivery-car.png" class="w-10">
+                <p class="font-bold mt-2">Fast & Free Shipping</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--New Arrivals-->
+
+
+    <section class="p-5">
+        <h1 class="text-2xl font-bold mb-4">New Arrivals</h1>
+        <div class="flex justify-between gap-3">
+            <div class="relative">
+                <img src="./images/f1.jpg" class="w-40 h-50 lg:w-80  object-cover rounded ">
+                <div class="absolute inset-0 bg-black bg-opacity-60 rounded flex flex-col items-center justify-center">
+                    <button class="border border-white rounded bg-white">Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    
+
+                </div>
+            </div>
+
+            <div class="relative" >
+                <img src="./images/f2.jpg" class="w-40 h-50 lg:w-80  object-cover rounded">
+                 <div class="absolute inset-0 bg-black bg-opacity-60 rounded flex flex-col items-center justify-center">
+                    <button class="border border-white rounded bg-white">Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="./images/f3.jpg" class="w-40 h-50 lg:w-80  object-cover rounded">
+                 <div class="absolute inset-0 bg-black bg-opacity-60 rounded flex flex-col items-center justify-center">
+                    <button class="border border-white rounded bg-white">Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="./images/f4.jpg" class="w-40 h-50 lg:w-80 object-cover rounded">
+                 <div class="absolute inset-0 bg-black bg-opacity-60 rounded flex flex-col items-center justify-center">
+                    <button class="border border-white rounded bg-white">Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+            </div>
+
+
+        </div>
+       
+
+    </section>
+
+    <!--Most Wanted-->
+
+    <!--Offer-->
+    <section class="p-5 flex justify-center">
+        <div class="w-full flex  h-80 bg-black p-5 justify-center items-center gap-8">
+            <img src="./images/offer.jpg " class="w-80  h-full ">
+            
+            <div class="p-3 ">
+                <h1 class="text-white font-bold text-2xl">Limited Offer</h1>
+                <p class="text-white font-bold">35% OFF on this for the first 30 Customers</p>
+                <button class="border border-white rounded-xl text-xs bg-white p-2 mt-2">Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+            
+        </div>
+    </section>   
+
+    
+    <!--News Letter-->
+    <section class="p-5 text-center">
+        <h1 class="text-2xl font-bold " >Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class="border border-black p-2 m-3" style="width: 80%;">
+        <br>
+        <button class="border border-white rounded-xl text-xs bg-black text-white p-3 mt-1">Subscribe
+                        <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+    </section>
+
+    <!--Footer-->
+    <section class="bg-black text-white p-8 lg:text-2xl">
+        <h1 class="font-bold text-2xl lg:text-4xl ">Nostra</h1>
+        <p class="mt-2">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="mt-2 ">
+            <i class="fa-brands fa-instagram" ></i>
+            <i class="fa-brands fa-twitter" ></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <p class="mt-2">@ 2023 Nostra.com</p>
+
+    </section>
+
+    <!-- JavaScript -->
+  <script>
+
+     var close=document.getElementById("close")
+      var pop= document.querySelector(".popup")
+     close.addEventListener("click",function(){
+        pop.classList.add("hidden")
+       
+    })
+    </script>
+
+    <script>
+    let currentIndex = 0;
+    const slider = document.getElementById("slider");
+    const totalSlides = slider.children.length;
+
+    function updateSlider() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    }
+  </script>
+
+   
+    
+</body>
+</html>
